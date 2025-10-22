@@ -14,7 +14,7 @@ def gcs_to_bq_ingestor(event, context):
     print("Cloud Function Triggered!")
     bucket_name = event['bucket']
     file_name = event['name']
-    print(f"📂 File uploaded: {file_name} in bucket: {bucket_name}")
+    print(f" File uploaded: {file_name} in bucket: {bucket_name}")
 
     if not file_name.endswith("metadata.json"):
         print(" Not a metadata file — skipping.")
